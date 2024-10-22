@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aula05</string>
+    <string name="ContaPoupanca">Conta Poupança</string>
+    <string name="ContaEspecial">Conta Especial</string>
+    <string name="Nome">Insira seu nome</string>
+    <string name="Saldo">Insira seu saldo</string>
+    <string name="NumRendimento">Insira os dias de rendimento</string>
+    <string name="NumConta">Insira o número da conta</string>
+    <string name="SaldoAtual">Insira o saldo atual</string>
+    <string name="TaxaRendimento">Insira a taxa de rendimento</string>
+    <string name="Limite">Insira o seu limite</string>
+    <string name="Valor">Insira o valor a ser sacado/depositado</string>
+    <string name="Sacar">Sacar</string>
+    <string name="Depositar">Depositar</string>
+    <string name="SaldoFinal">R$</string>
+    <string name="ErroSaquePoupanca">Voce não tem saldo suficiente</string>
+    <string name="ErroSaqueEspecial">Voce não tem limite suficiente</string>
+    <string name="Teste">TESTE</string>
+    <string name="NumeroConta">Número da conta:</string>
+    <string name="NomeCliente">\nNome Cliente: </string>
+</resources>
