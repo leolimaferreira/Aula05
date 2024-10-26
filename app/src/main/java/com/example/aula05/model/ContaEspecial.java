@@ -1,9 +1,16 @@
+/*
+ *@author:<Leonardo Lima 1110482423021>
+ */
 package com.example.aula05.model;
 
 public class ContaEspecial extends ContaBancaria{
     double saldo = getSaldo();
     private float limite;
-    
+
+    public ContaEspecial() {
+        super();
+    }
+
     @Override
     public void sacar(double valor) {
         if((saldo - valor) >= -limite) {

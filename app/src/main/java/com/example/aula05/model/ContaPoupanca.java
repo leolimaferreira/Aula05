@@ -1,9 +1,16 @@
+/*
+ *@author:<Leonardo Lima 1110482423021>
+ */
 package com.example.aula05.model;
 
 public class ContaPoupanca extends ContaBancaria{
     double saldo = getSaldo();
     private int diaRendimento;
     private double taxaRendimento;
+
+    public ContaPoupanca() {
+        super();
+    }
 
     @Override
     public void sacar(double valor) {

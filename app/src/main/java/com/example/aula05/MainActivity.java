@@ -1,3 +1,6 @@
+/*
+ *@author:<Leonardo Lima 1110482423021>
+ */
 package com.example.aula05;
 
 import android.annotation.SuppressLint;
@@ -74,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             ContaPoupanca conta = new ContaPoupanca();
             conta.setNumConta(Integer.parseInt(etNumConta.getText().toString()));
             conta.setCliente(etNome.getText().toString());
-            conta.setSaldo(Float.parseFloat(etSaldoAtual.getText().toString()));
+            conta.setSaldo(Double.parseDouble(etSaldoAtual.getText().toString()));
             conta.setDiaRendimento(Integer.parseInt(etDiasRendimento.getText().toString()));
             conta.depositar(Double.parseDouble(etValor.getText().toString()));
             conta.calcularNovoSaldo(Double.parseDouble(etTaxa.getText().toString()));
@@ -86,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             ContaEspecial conta = new ContaEspecial();
             conta.setNumConta(Integer.parseInt(etNumConta.getText().toString()));
             conta.setCliente(etNome.getText().toString());
-            conta.setSaldo(Float.parseFloat(etSaldoAtual.getText().toString()));
+            conta.setSaldo(Double.parseDouble(etSaldoAtual.getText().toString()));
             conta.setLimite(Float.parseFloat(etLimite.getText().toString()));
             conta.depositar(Double.parseDouble(etValor.getText().toString()));
             BigDecimal sal = BigDecimal.valueOf(conta.getSaldo()).setScale(2, RoundingMode.HALF_UP);
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             ContaPoupanca conta = new ContaPoupanca();
             conta.setNumConta(Integer.parseInt(etNumConta.getText().toString()));
             conta.setCliente(etNome.getText().toString());
-            conta.setSaldo(Float.parseFloat(etSaldoAtual.getText().toString()));
+            conta.setSaldo(Double.parseDouble(etSaldoAtual.getText().toString()));
             conta.setDiaRendimento(Integer.parseInt(etDiasRendimento.getText().toString()));
             conta.sacar(Double.parseDouble(etValor.getText().toString()));
             if(conta.getSaldo() == Float.parseFloat(etSaldoAtual.getText().toString())) {
@@ -119,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             ContaEspecial conta = new ContaEspecial();
             conta.setNumConta(Integer.parseInt(etNumConta.getText().toString()));
             conta.setCliente(etNome.getText().toString());
-            conta.setSaldo(Float.parseFloat(etSaldoAtual.getText().toString()));
+            conta.setSaldo(Double.parseDouble(etSaldoAtual.getText().toString()));
             conta.setLimite(Float.parseFloat(etLimite.getText().toString()));
             conta.sacar(Double.parseDouble(etValor.getText().toString()));
             if(conta.getSaldo() == Float.parseFloat(etSaldoAtual.getText().toString())) {
